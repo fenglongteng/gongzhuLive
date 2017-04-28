@@ -69,6 +69,8 @@ static NSString * const kRecipesStoreName = @"ExceptionalModel.sqlite";
 //    }
     
     
+    
+    
     //登录页面
     [AppDelegate setLogVCBecomeRootViewController];
     
