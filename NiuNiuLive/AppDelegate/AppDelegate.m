@@ -67,6 +67,8 @@ static NSString * const kRecipesStoreName = @"ExceptionalModel.sqlite";
 //        [AppDelegate setTabBarControllerBecomeRootViewController];
 //        return YES;
 //    }
+    
+    
     //登录页面
     [AppDelegate setLogVCBecomeRootViewController];
     
