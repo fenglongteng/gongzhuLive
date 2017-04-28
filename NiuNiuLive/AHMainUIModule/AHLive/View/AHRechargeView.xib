@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AHRechargeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_live_kscz" translatesAutoresizingMaskIntoConstraints="NO" id="Qf1-8I-CbU">
+                    <rect key="frame" x="37.5" y="156" width="300" height="355"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A16-OW-HVK">
+                    <rect key="frame" x="47.5" y="192" width="280" height="309"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8f6-8j-LaC">
+                            <rect key="frame" x="10" y="266" width="260" height="35"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="立即充值" backgroundImage="btn_live_zdl">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="rechargeClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Y8B-CG-w9q"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前游戏币：8938" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAH-c2-J8l">
+                            <rect key="frame" x="87" y="8" width="106.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzf-8W-lJA">
+                            <rect key="frame" x="10" y="32.5" width="260" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" image="bg_live_ksczd"/>
+                            <state key="selected" image="bg_live_ksczd0"/>
+                            <connections>
+                                <action selector="rechargeSelect:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jt9-8A-ed9"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLy-Vz-mTV">
+                            <rect key="frame" x="90" y="32" width="100" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="IjE-iC-Dd3"/>
+                                <constraint firstAttribute="height" constant="30" id="xIr-fr-Z1J"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="0.2381501677852349" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmj-9d-Lg0">
+                            <rect key="frame" x="10" y="87.5" width="260" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" image="bg_live_ksczd"/>
+                            <state key="selected" image="bg_live_ksczd0"/>
+                            <connections>
+                                <action selector="rechargeSelect:" destination="iN0-l3-epB" eventType="touchUpInside" id="rl7-yF-UWc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYA-EX-dCb">
+                            <rect key="frame" x="10" y="142.5" width="260" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" image="bg_live_ksczd"/>
+                            <state key="selected" image="bg_live_ksczd0"/>
+                            <connections>
+                                <action selector="rechargeSelect:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ymf-eL-l2p"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R2-oB-xaC">
+                            <rect key="frame" x="10" y="197.5" width="260" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" image="bg_live_ksczd"/>
+                            <state key="selected" image="bg_live_ksczd0"/>
+                            <connections>
+                                <action selector="rechargeSelect:" destination="iN0-l3-epB" eventType="touchUpInside" id="cHz-Li-0Gy"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="172800游戏币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aE-NK-vAD">
+                            <rect key="frame" x="90" y="61" width="73.5" height="13.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="98元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGs-Wy-PMq">
+                            <rect key="frame" x="90" y="87" width="100" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Gdc-1b-roz"/>
+                                <constraint firstAttribute="width" constant="100" id="jlL-bq-rWh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="0.23815016780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="940800游戏币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIm-Go-zNm">
+                            <rect key="frame" x="90" y="116" width="76.5" height="13.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="288元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0a-0v-UMc">
+                            <rect key="frame" x="90" y="142.5" width="100" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="C29-I8-8Gf"/>
+                                <constraint firstAttribute="width" constant="100" id="P9E-Pu-Pi6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="0.23815016780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2764800游戏币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itb-lf-3Jh">
+                            <rect key="frame" x="90" y="171.5" width="82" height="13.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="588元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3B-RM-rO6">
+                            <rect key="frame" x="90" y="197.5" width="100" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="VY7-c2-4zL"/>
+                                <constraint firstAttribute="height" constant="30" id="xIu-nA-IcV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="0.23815016780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5764800游戏币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLK-3Z-W6O">
+                            <rect key="frame" x="90" y="226.5" width="82.5" height="13.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="j0a-0v-UMc" firstAttribute="leading" secondItem="EYA-EX-dCb" secondAttribute="leading" constant="80" id="3Ii-ur-L9U"/>
+                        <constraint firstItem="EYA-EX-dCb" firstAttribute="top" secondItem="Hmj-9d-Lg0" secondAttribute="bottom" constant="5" id="4Vg-QS-dar"/>
+                        <constraint firstItem="8aE-NK-vAD" firstAttribute="top" secondItem="yLy-Vz-mTV" secondAttribute="bottom" constant="-1" id="5NX-hs-E8f"/>
+                        <constraint firstItem="itb-lf-3Jh" firstAttribute="leading" secondItem="j0a-0v-UMc" secondAttribute="leading" id="Bgu-rH-zn3"/>
+                        <constraint firstItem="wIm-Go-zNm" firstAttribute="top" secondItem="eGs-Wy-PMq" secondAttribute="bottom" constant="-1" id="CLy-Av-Bkt"/>
+                        <constraint firstItem="yLy-Vz-mTV" firstAttribute="top" secondItem="wzf-8W-lJA" secondAttribute="top" id="ChM-84-kxf"/>
+                        <constraint firstItem="j0a-0v-UMc" firstAttribute="top" secondItem="EYA-EX-dCb" secondAttribute="top" id="Edd-sl-aVl"/>
+                        <constraint firstItem="8f6-8j-LaC" firstAttribute="centerX" secondItem="A16-OW-HVK" secondAttribute="centerX" id="H1M-VP-VDc"/>
+                        <constraint firstItem="itb-lf-3Jh" firstAttribute="top" secondItem="j0a-0v-UMc" secondAttribute="bottom" constant="-1" id="INB-r9-M3o"/>
+                        <constraint firstItem="Y3B-RM-rO6" firstAttribute="top" secondItem="3R2-oB-xaC" secondAttribute="top" id="LU0-Gc-abK"/>
+                        <constraint firstItem="HLK-3Z-W6O" firstAttribute="top" secondItem="Y3B-RM-rO6" secondAttribute="bottom" constant="-1" id="Qf1-in-7Qf"/>
+                        <constraint firstItem="EYA-EX-dCb" firstAttribute="centerX" secondItem="Hmj-9d-Lg0" secondAttribute="centerX" id="Qsx-z7-Efl"/>
+                        <constraint firstItem="Y3B-RM-rO6" firstAttribute="leading" secondItem="3R2-oB-xaC" secondAttribute="leading" constant="80" id="RqR-qq-6gp"/>
+                        <constraint firstItem="HLK-3Z-W6O" firstAttribute="leading" secondItem="Y3B-RM-rO6" secondAttribute="leading" id="Syx-EX-it9"/>
+                        <constraint firstAttribute="bottom" secondItem="8f6-8j-LaC" secondAttribute="bottom" constant="8" id="Tft-Lu-h55"/>
+                        <constraint firstItem="eGs-Wy-PMq" firstAttribute="leading" secondItem="Hmj-9d-Lg0" secondAttribute="leading" constant="80" id="UCB-VP-XpQ"/>
+                        <constraint firstItem="yAH-c2-J8l" firstAttribute="top" secondItem="A16-OW-HVK" secondAttribute="top" constant="8" id="UaQ-DU-3Qi"/>
+                        <constraint firstItem="3R2-oB-xaC" firstAttribute="centerX" secondItem="EYA-EX-dCb" secondAttribute="centerX" id="WIW-vc-lRu"/>
+                        <constraint firstItem="wIm-Go-zNm" firstAttribute="leading" secondItem="eGs-Wy-PMq" secondAttribute="leading" id="WRa-Ic-wa1"/>
+                        <constraint firstItem="Hmj-9d-Lg0" firstAttribute="centerX" secondItem="A16-OW-HVK" secondAttribute="centerX" id="XgW-ds-sXm"/>
+                        <constraint firstItem="eGs-Wy-PMq" firstAttribute="top" secondItem="Hmj-9d-Lg0" secondAttribute="top" id="b1E-ca-8ec"/>
+                        <constraint firstItem="yLy-Vz-mTV" firstAttribute="leading" secondItem="wzf-8W-lJA" secondAttribute="leading" constant="80" id="hou-T5-HVC"/>
+                        <constraint firstItem="3R2-oB-xaC" firstAttribute="top" secondItem="EYA-EX-dCb" secondAttribute="bottom" constant="5" id="kDa-4X-5ju"/>
+                        <constraint firstItem="8aE-NK-vAD" firstAttribute="leading" secondItem="yLy-Vz-mTV" secondAttribute="leading" id="leX-az-L8G"/>
+                        <constraint firstItem="Hmj-9d-Lg0" firstAttribute="top" secondItem="wzf-8W-lJA" secondAttribute="bottom" constant="5" id="mnn-Cf-7Ch"/>
+                        <constraint firstItem="wzf-8W-lJA" firstAttribute="centerX" secondItem="A16-OW-HVK" secondAttribute="centerX" id="oSH-am-vTW"/>
+                        <constraint firstItem="yAH-c2-J8l" firstAttribute="centerX" secondItem="A16-OW-HVK" secondAttribute="centerX" id="sv5-Z9-DPk"/>
+                        <constraint firstItem="wzf-8W-lJA" firstAttribute="top" secondItem="yAH-c2-J8l" secondAttribute="bottom" constant="10" id="xl2-df-drO"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chz-Yq-nSf">
+                    <rect key="frame" x="311" y="176" width="32" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                    <state key="normal" image="btn_live_close"/>
+                    <connections>
+                        <action selector="closeRecharge:" destination="iN0-l3-epB" eventType="touchUpInside" id="Qbg-bi-hI4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Qf1-8I-CbU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7A5-VZ-IE4"/>
+                <constraint firstItem="chz-Yq-nSf" firstAttribute="trailing" secondItem="A16-OW-HVK" secondAttribute="trailing" constant="16" id="8z5-zZ-Vle"/>
+                <constraint firstItem="A16-OW-HVK" firstAttribute="top" secondItem="Qf1-8I-CbU" secondAttribute="top" constant="36" id="9P5-Kg-8pa"/>
+                <constraint firstItem="Qf1-8I-CbU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IYQ-iQ-Pae"/>
+                <constraint firstItem="A16-OW-HVK" firstAttribute="trailing" secondItem="Qf1-8I-CbU" secondAttribute="trailing" constant="-10" id="aCE-gu-RbC"/>
+                <constraint firstItem="A16-OW-HVK" firstAttribute="leading" secondItem="Qf1-8I-CbU" secondAttribute="leading" constant="10" id="e2F-R7-uch"/>
+                <constraint firstItem="A16-OW-HVK" firstAttribute="bottom" secondItem="Qf1-8I-CbU" secondAttribute="bottom" constant="-10" id="jbK-oV-82e"/>
+                <constraint firstItem="chz-Yq-nSf" firstAttribute="top" secondItem="A16-OW-HVK" secondAttribute="top" constant="-16" id="zPe-BB-6Au"/>
+            </constraints>
+            <connections>
+                <outlet property="meSpeciesLb" destination="yAH-c2-J8l" id="d6O-Ab-dsS"/>
+                <outlet property="rechBackView" destination="A16-OW-HVK" id="whI-aK-TJB"/>
+                <outlet property="rechargeImageV" destination="Qf1-8I-CbU" id="b6e-4j-2im"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_live_kscz" width="300" height="355"/>
+        <image name="bg_live_ksczd" width="260" height="50"/>
+        <image name="bg_live_ksczd0" width="260" height="50"/>
+        <image name="btn_live_close" width="32" height="32"/>
+        <image name="btn_live_zdl" width="260" height="35"/>
+    </resources>
+</document>

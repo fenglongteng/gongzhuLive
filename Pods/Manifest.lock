@@ -1,0 +1,15 @@
+PODS:
+  - GPUImage (0.1.7)
+  - Protobuf (3.1.0)
+
+DEPENDENCIES:
+  - GPUImage (~> 0.1.7)
+  - Protobuf (~> 3.1.0)
+
+SPEC CHECKSUMS:
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  Protobuf: 265e9977d04a83eba9cefb0bed3ad07e41033b4a
+
+PODFILE CHECKSUM: cc5dc14ad5177de9a0be851874d4c026cd3ad183
+
+COCOAPODS: 1.1.1

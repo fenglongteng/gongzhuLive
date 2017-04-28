@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AHLiveSettingView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FfC-ba-zK6">
+                    <rect key="frame" x="10" y="667" width="355" height="190"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_live_settings" translatesAutoresizingMaskIntoConstraints="NO" id="f2k-Ce-ZBw">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="190"/>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS2-fa-5be">
+                            <rect key="frame" x="24" y="95" width="307" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="u1z-rF-wWV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4X-gP-ScG">
+                            <rect key="frame" x="30" y="17" width="45" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <state key="normal" image="bg_lse_lsb0">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="historyGainsClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Wo3-Wi-Z0i"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="历史战绩" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4v-T1-DBg">
+                            <rect key="frame" x="28.5" y="70" width="49.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="关闭声音" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4F-rE-9ER">
+                            <rect key="frame" x="127" y="70" width="49.5" height="14.5"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cT-x7-KWb">
+                            <rect key="frame" x="215" y="17" width="45" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <state key="normal" image="bg_lse_game0">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" image="bg_lse_game1"/>
+                            <connections>
+                                <action selector="packupGame:" destination="iN0-l3-epB" eventType="touchUpInside" id="YJG-T6-sJh"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收起游戏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3Q-Bv-ROe">
+                            <rect key="frame" x="213" y="70" width="49.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7x-Hk-w22">
+                            <rect key="frame" x="30" y="113" width="45" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <state key="normal" image="bg_lse_live0">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" image="bg_lse_live1"/>
+                            <connections>
+                                <action selector="closeLive:" destination="iN0-l3-epB" eventType="touchUpInside" id="jgA-Mg-bsF"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关闭直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4N-Gm-Lha">
+                            <rect key="frame" x="28" y="166" width="49.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhV-fW-hEC">
+                            <rect key="frame" x="129" y="113" width="45" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <state key="normal" image="bg_lse_small0">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" image="bg_lse_small1"/>
+                            <connections>
+                                <action selector="switchoverLiveScreen:" destination="iN0-l3-epB" eventType="touchUpInside" id="1a4-Jy-wHi"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小屏直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlj-sC-ZPv">
+                            <rect key="frame" x="127" y="166" width="49.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRB-O9-vjV">
+                            <rect key="frame" x="127" y="17" width="45" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <state key="normal" image="bg_lse_shenying0">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" image="bg_lse_shenying1"/>
+                            <connections>
+                                <action selector="closeVoiceClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="nOh-gg-Se8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="g3Q-Bv-ROe" firstAttribute="centerX" secondItem="4cT-x7-KWb" secondAttribute="centerX" id="06K-fY-f2l"/>
+                        <constraint firstItem="4cT-x7-KWb" firstAttribute="top" secondItem="IRB-O9-vjV" secondAttribute="top" id="0Jj-Iy-dJe"/>
+                        <constraint firstItem="SS2-fa-5be" firstAttribute="centerY" secondItem="FfC-ba-zK6" secondAttribute="centerY" id="2j1-Mk-eix"/>
+                        <constraint firstItem="F4X-gP-ScG" firstAttribute="top" secondItem="FfC-ba-zK6" secondAttribute="top" constant="17" id="37t-zE-0C5"/>
+                        <constraint firstItem="s4v-T1-DBg" firstAttribute="centerX" secondItem="F4X-gP-ScG" secondAttribute="centerX" id="6uO-H0-Yin"/>
+                        <constraint firstItem="f2k-Ce-ZBw" firstAttribute="leading" secondItem="FfC-ba-zK6" secondAttribute="leading" id="7p1-Yh-cUU"/>
+                        <constraint firstItem="AhV-fW-hEC" firstAttribute="top" secondItem="g7x-Hk-w22" secondAttribute="top" id="ALN-LL-uPl"/>
+                        <constraint firstItem="z4N-Gm-Lha" firstAttribute="top" secondItem="g7x-Hk-w22" secondAttribute="bottom" constant="8" id="AMP-gR-W4l"/>
+                        <constraint firstItem="g7x-Hk-w22" firstAttribute="top" secondItem="SS2-fa-5be" secondAttribute="bottom" constant="17" id="CcU-4J-U2m"/>
+                        <constraint firstItem="SS2-fa-5be" firstAttribute="centerX" secondItem="FfC-ba-zK6" secondAttribute="centerX" id="DeD-fZ-pdi"/>
+                        <constraint firstItem="jlj-sC-ZPv" firstAttribute="centerX" secondItem="AhV-fW-hEC" secondAttribute="centerX" id="GMU-Go-NPE"/>
+                        <constraint firstItem="4cT-x7-KWb" firstAttribute="leading" secondItem="IRB-O9-vjV" secondAttribute="trailing" constant="43" id="MKS-vY-sEd"/>
+                        <constraint firstItem="SS2-fa-5be" firstAttribute="leading" secondItem="FfC-ba-zK6" secondAttribute="leading" constant="24" id="O85-eY-f7s"/>
+                        <constraint firstItem="z4N-Gm-Lha" firstAttribute="centerX" secondItem="g7x-Hk-w22" secondAttribute="centerX" id="QIo-zl-CEy"/>
+                        <constraint firstItem="f2k-Ce-ZBw" firstAttribute="top" secondItem="FfC-ba-zK6" secondAttribute="top" id="VRz-18-WpK"/>
+                        <constraint firstItem="F4X-gP-ScG" firstAttribute="leading" secondItem="FfC-ba-zK6" secondAttribute="leading" constant="30" id="WcF-pr-fRg"/>
+                        <constraint firstItem="IRB-O9-vjV" firstAttribute="top" secondItem="F4X-gP-ScG" secondAttribute="top" id="eFv-eG-i89"/>
+                        <constraint firstItem="g3Q-Bv-ROe" firstAttribute="top" secondItem="4cT-x7-KWb" secondAttribute="bottom" constant="8" id="eup-2h-J3o"/>
+                        <constraint firstAttribute="height" constant="190" id="fEa-Jv-yt4"/>
+                        <constraint firstAttribute="bottom" secondItem="f2k-Ce-ZBw" secondAttribute="bottom" id="gpu-2i-83t"/>
+                        <constraint firstItem="g7x-Hk-w22" firstAttribute="centerX" secondItem="F4X-gP-ScG" secondAttribute="centerX" id="heX-Ix-U4b"/>
+                        <constraint firstItem="AhV-fW-hEC" firstAttribute="leading" secondItem="g7x-Hk-w22" secondAttribute="trailing" constant="54" id="jan-bi-Qrh"/>
+                        <constraint firstItem="IRB-O9-vjV" firstAttribute="leading" secondItem="F4X-gP-ScG" secondAttribute="trailing" constant="52" id="rus-j3-3DU"/>
+                        <constraint firstItem="jlj-sC-ZPv" firstAttribute="top" secondItem="AhV-fW-hEC" secondAttribute="bottom" constant="8" id="ssx-Kz-tP3"/>
+                        <constraint firstAttribute="trailing" secondItem="f2k-Ce-ZBw" secondAttribute="trailing" id="vRy-9d-c0h"/>
+                        <constraint firstItem="s4v-T1-DBg" firstAttribute="top" secondItem="F4X-gP-ScG" secondAttribute="bottom" constant="8" id="z6z-pL-eUS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="FfC-ba-zK6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="478-Io-9Fb"/>
+                <constraint firstAttribute="bottom" secondItem="FfC-ba-zK6" secondAttribute="bottom" constant="-190" id="ccT-de-UCE"/>
+                <constraint firstItem="FfC-ba-zK6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="k46-iT-GvU"/>
+            </constraints>
+            <connections>
+                <outlet property="closeLiveLb" destination="z4N-Gm-Lha" id="xgU-1q-h7s"/>
+                <outlet property="closeVoiceLb" destination="J4F-rE-9ER" id="mbr-9N-z3q"/>
+                <outlet property="historyGainsLb" destination="s4v-T1-DBg" id="leG-j8-Set"/>
+                <outlet property="liveScreenLb" destination="jlj-sC-ZPv" id="7ta-YM-aW8"/>
+                <outlet property="packUpGameLb" destination="g3Q-Bv-ROe" id="2CP-Xj-Jnh"/>
+                <outlet property="setView" destination="FfC-ba-zK6" id="FYD-r5-2zK"/>
+                <outlet property="showGameBtn" destination="4cT-x7-KWb" id="T8w-7r-paN"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_live_settings" width="360" height="180"/>
+        <image name="bg_lse_game0" width="45" height="45"/>
+        <image name="bg_lse_game1" width="45" height="45"/>
+        <image name="bg_lse_live0" width="45" height="45"/>
+        <image name="bg_lse_live1" width="45" height="45"/>
+        <image name="bg_lse_lsb0" width="45" height="45"/>
+        <image name="bg_lse_shenying0" width="45" height="45"/>
+        <image name="bg_lse_shenying1" width="45" height="45"/>
+        <image name="bg_lse_small0" width="45" height="45"/>
+        <image name="bg_lse_small1" width="45" height="45"/>
+    </resources>
+</document>

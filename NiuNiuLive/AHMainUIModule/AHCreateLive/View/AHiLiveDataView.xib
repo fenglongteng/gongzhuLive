@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AHiLiveDataView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_ilive_dssj" translatesAutoresizingMaskIntoConstraints="NO" id="BHd-K7-2lP">
+                    <rect key="frame" x="84" y="281" width="207" height="105"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qm5-fj-a68">
+                    <rect key="frame" x="84" y="281" width="207" height="105"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐打赏(人)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZQ-8t-45Z">
+                            <rect key="frame" x="24" y="47" width="58.5" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已打赏玩家(人)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6U-yd-Iqe">
+                            <rect key="frame" x="112.5" y="47" width="69" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzw-F1-UKw">
+                            <rect key="frame" x="24" y="64" width="24" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww6-Lr-wGB">
+                            <rect key="frame" x="112.5" y="64" width="22" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJa-tN-ueK">
+                            <rect key="frame" x="175" y="0.0" width="32" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" image="btn_live_close"/>
+                            <connections>
+                                <action selector="closeLiveDataView:" destination="iN0-l3-epB" eventType="touchUpInside" id="JMB-5i-xJp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="KJa-tN-ueK" secondAttribute="trailing" id="0kf-dN-Kzd"/>
+                        <constraint firstItem="mZQ-8t-45Z" firstAttribute="leading" secondItem="qm5-fj-a68" secondAttribute="leading" constant="24" id="5l1-OE-021"/>
+                        <constraint firstItem="L6U-yd-Iqe" firstAttribute="leading" secondItem="mZQ-8t-45Z" secondAttribute="trailing" constant="30" id="9ok-4F-Rqe"/>
+                        <constraint firstItem="ww6-Lr-wGB" firstAttribute="top" secondItem="L6U-yd-Iqe" secondAttribute="bottom" constant="5" id="BxM-HT-MTD"/>
+                        <constraint firstItem="mZQ-8t-45Z" firstAttribute="top" secondItem="qm5-fj-a68" secondAttribute="top" constant="47" id="Sdg-zV-3eM"/>
+                        <constraint firstItem="L6U-yd-Iqe" firstAttribute="top" secondItem="mZQ-8t-45Z" secondAttribute="top" id="Tja-cd-S6Q"/>
+                        <constraint firstItem="Pzw-F1-UKw" firstAttribute="top" secondItem="mZQ-8t-45Z" secondAttribute="bottom" constant="5" id="VOU-C6-sUN"/>
+                        <constraint firstItem="ww6-Lr-wGB" firstAttribute="leading" secondItem="L6U-yd-Iqe" secondAttribute="leading" id="gjH-uz-Dqe"/>
+                        <constraint firstItem="Pzw-F1-UKw" firstAttribute="leading" secondItem="mZQ-8t-45Z" secondAttribute="leading" id="xdU-vH-nh9"/>
+                        <constraint firstItem="KJa-tN-ueK" firstAttribute="top" secondItem="qm5-fj-a68" secondAttribute="top" id="zoS-57-7dL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qm5-fj-a68" firstAttribute="top" secondItem="BHd-K7-2lP" secondAttribute="top" id="Ome-0v-ray"/>
+                <constraint firstItem="BHd-K7-2lP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="R2j-gT-jjI"/>
+                <constraint firstItem="qm5-fj-a68" firstAttribute="leading" secondItem="BHd-K7-2lP" secondAttribute="leading" id="a1X-yy-lZd"/>
+                <constraint firstItem="qm5-fj-a68" firstAttribute="trailing" secondItem="BHd-K7-2lP" secondAttribute="trailing" id="jzI-1j-Wgy"/>
+                <constraint firstItem="BHd-K7-2lP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nQj-wH-Cty"/>
+                <constraint firstItem="qm5-fj-a68" firstAttribute="bottom" secondItem="BHd-K7-2lP" secondAttribute="bottom" id="qwg-Dh-Wyc"/>
+            </constraints>
+            <point key="canvasLocation" x="-106" y="35"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_ilive_dssj" width="207" height="105"/>
+        <image name="btn_live_close" width="32" height="32"/>
+    </resources>
+</document>

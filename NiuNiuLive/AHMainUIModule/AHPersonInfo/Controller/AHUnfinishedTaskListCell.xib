@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="KGk-i7-Jjw" customClass="AHUnfinishedTaskListCell">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uiu-kW-0F1">
+                        <rect key="frame" x="275" y="16" width="62" height="26"/>
+                        <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="62" id="jBu-Pl-Ncn"/>
+                            <constraint firstAttribute="height" constant="26" id="riC-0R-mc6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="完成它">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完成一次充值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLg-2b-cw8">
+                        <rect key="frame" x="28" y="16" width="74" height="14.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5000 经验值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szs-G4-VJh">
+                        <rect key="frame" x="28" y="36.5" width="65" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="进度 2/10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sd7-KI-wgw">
+                        <rect key="frame" x="275" y="67" width="62" height="13.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="62" id="ljr-1v-aEV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsM-Lv-u0z" customClass="WMProgressView">
+                        <rect key="frame" x="28" y="66.5" width="247" height="15"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="dQ6-ku-Uc1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.92549019607843142" green="0.92941176470588238" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="Sd7-KI-wgw" firstAttribute="centerY" secondItem="EsM-Lv-u0z" secondAttribute="centerY" id="6E4-eO-d2M"/>
+                    <constraint firstItem="Uiu-kW-0F1" firstAttribute="trailing" secondItem="Sd7-KI-wgw" secondAttribute="trailing" id="Nnp-vK-8Lk"/>
+                    <constraint firstItem="aLg-2b-cw8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="OaZ-A2-k9R"/>
+                    <constraint firstItem="Szs-G4-VJh" firstAttribute="top" secondItem="aLg-2b-cw8" secondAttribute="bottom" constant="6" id="Pvn-Ur-kHB"/>
+                    <constraint firstItem="Sd7-KI-wgw" firstAttribute="leading" secondItem="EsM-Lv-u0z" secondAttribute="trailing" id="YKw-vG-M40"/>
+                    <constraint firstItem="EsM-Lv-u0z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="af2-AM-HrG"/>
+                    <constraint firstItem="aLg-2b-cw8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="itW-rZ-C2B"/>
+                    <constraint firstItem="Szs-G4-VJh" firstAttribute="leading" secondItem="aLg-2b-cw8" secondAttribute="leading" id="t0P-1b-u7b"/>
+                    <constraint firstItem="Uiu-kW-0F1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="t0f-0D-H7Q"/>
+                    <constraint firstAttribute="trailing" secondItem="Uiu-kW-0F1" secondAttribute="trailing" constant="23" id="ytY-sf-HDz"/>
+                    <constraint firstItem="Sd7-KI-wgw" firstAttribute="top" secondItem="Uiu-kW-0F1" secondAttribute="bottom" constant="25" id="zfa-Rn-feH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="completeBt" destination="Uiu-kW-0F1" id="XJZ-4V-bk0"/>
+                <outlet property="experienceLabel" destination="Szs-G4-VJh" id="x8x-cI-MeG"/>
+                <outlet property="progressLabel" destination="Sd7-KI-wgw" id="aS6-ef-aU0"/>
+                <outlet property="progressView" destination="EsM-Lv-u0z" id="8hP-SL-vnl"/>
+                <outlet property="taskTitleLabel" destination="aLg-2b-cw8" id="v8L-QK-x00"/>
+            </connections>
+            <point key="canvasLocation" x="54" y="92.5"/>
+        </tableViewCell>
+    </objects>
+</document>

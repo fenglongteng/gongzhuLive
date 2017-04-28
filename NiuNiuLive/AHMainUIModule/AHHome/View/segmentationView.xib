@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="segmentationView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4H-nB-6MW">
+                    <rect key="frame" x="20" y="20" width="280" height="2"/>
+                    <color key="backgroundColor" red="0.6588235294117647" green="0.23529411764705882" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="eCn-Pb-fz1"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="历史回放" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2P4-Dz-vqG">
+                    <rect key="frame" x="109" y="40" width="102" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="rOv-vH-tRu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关注主播的直播没有及时看到，在这里可以看回放哦！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaa-AW-0yH">
+                    <rect key="frame" x="0.0" y="69" width="320" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="wlP-eI-FwW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.098039215690000001" green="0.0039215686269999999" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="2P4-Dz-vqG" firstAttribute="top" secondItem="s4H-nB-6MW" secondAttribute="bottom" constant="18" id="5M4-i7-To3"/>
+                <constraint firstAttribute="trailing" secondItem="s4H-nB-6MW" secondAttribute="trailing" constant="20" id="8Q0-5B-zva"/>
+                <constraint firstItem="2P4-Dz-vqG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="109" id="9WW-CW-6ta"/>
+                <constraint firstAttribute="trailing" secondItem="oaa-AW-0yH" secondAttribute="trailing" id="9he-oh-bBd"/>
+                <constraint firstAttribute="trailing" secondItem="2P4-Dz-vqG" secondAttribute="trailing" constant="109" id="HoH-5s-IHI"/>
+                <constraint firstItem="s4H-nB-6MW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="aze-EQ-2gh"/>
+                <constraint firstItem="oaa-AW-0yH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gfY-Qf-QpC"/>
+                <constraint firstItem="s4H-nB-6MW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="lcT-lm-TFp"/>
+                <constraint firstItem="oaa-AW-0yH" firstAttribute="top" secondItem="2P4-Dz-vqG" secondAttribute="bottom" constant="8" id="t3x-7g-GbU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backPlayLbl" destination="2P4-Dz-vqG" id="jFs-yZ-npc"/>
+                <outlet property="remindLbl" destination="oaa-AW-0yH" id="SCm-Ut-rwW"/>
+            </connections>
+            <point key="canvasLocation" x="-55" y="53"/>
+        </view>
+    </objects>
+</document>

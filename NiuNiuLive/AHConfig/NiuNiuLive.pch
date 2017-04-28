@@ -1,0 +1,29 @@
+//
+//  NiuNiuLive.pch
+//  NiuNiuLive
+//
+//  Created by anhui on 17/3/15.
+//  Copyright © 2017年 AH. All rights reserved.
+// 尽量不要在pch中导入头文件。编译会变慢 将不会再修改的文件可以放入。
+
+#ifndef NiuNiuLive_pch
+#define NiuNiuLive_pch
+
+//其他头文件
+#import "AHAppSDKConfig.h"
+#import "AHHttpsApi.h"
+#import "AHConfigConstant.h"
+#import "AHTool.h"
+
+//公共头文件
+
+#import "UIView+ST.h"
+#import "AppDelegate.h"
+#import "Masonry.h"
+#import "AHTcpApi.h"
+#import "UIImageView+WebCache.h"
+#import "AHPersonInfoManager.h"
+//打赏标识符
+#define  EXCEPTIONAL @"exceptional"
+
+#endif /* NiuNiuLive_pch */

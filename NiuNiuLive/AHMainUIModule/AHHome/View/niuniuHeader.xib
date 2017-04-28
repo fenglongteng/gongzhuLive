@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="niuniuHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="404"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="image_bairennn.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iwS-mF-CNg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="235"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="开启插件的直播间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlP-Sv-bGd">
+                    <rect key="frame" x="16" y="315" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全新版本百人牛牛，邀请来战！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vET-JQ-Avr">
+                    <rect key="frame" x="8" y="242" width="213" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="213" id="Kkv-3n-U0r"/>
+                        <constraint firstAttribute="height" constant="21" id="V0B-bJ-f6z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="百人牛牛，牛牛游戏的豪华升级版，最早流行于江浙一带，是可以同时上百人进行的简单押注类扑克游戏，由牛妞游戏中心网络平台发行。游戏内满足坐庄条件玩家可坐庄，闲家分别与庄家比较拍醒大小定胜负，与其他闲家污任何关系。" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5N-6E-FCy">
+                    <rect key="frame" x="8" y="269" width="304" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="63" id="TCA-PR-x9c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="牌型比较：有牛 &gt; 没牛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2r3-9e-0zn">
+                    <rect key="frame" x="8" y="322" width="213" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="213" id="7Ng-oZ-kTD"/>
+                        <constraint firstAttribute="height" constant="21" id="MQP-5F-V7H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分数比较：牛牛 &gt; 牛9 &gt; 牛8 &gt; 牛7 &gt; 牛6 &gt; 牛5 &gt; 牛4 &gt; 牛3 &gt; 牛2 &gt; 牛1" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZa-hx-Vnv">
+                    <rect key="frame" x="8" y="338" width="304" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="35" id="QNS-ms-ex4"/>
+                        <constraint firstAttribute="height" constant="35" id="kao-wc-Qol"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldm-D3-p86" userLabel="分割线">
+                    <rect key="frame" x="8" y="373" width="304" height="1"/>
+                    <color key="backgroundColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="jvJ-08-jzD"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开启插件的直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Kn-fF-NSA">
+                    <rect key="frame" x="8" y="382" width="124" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="N6T-OT-v7G"/>
+                        <constraint firstAttribute="width" constant="124" id="XHE-Dr-J6N"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.098039215690000001" green="0.0039215686269999999" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="HZa-hx-Vnv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="1U0-dK-blr"/>
+                <constraint firstItem="2r3-9e-0zn" firstAttribute="top" secondItem="b5N-6E-FCy" secondAttribute="bottom" id="4t7-bJ-zJT"/>
+                <constraint firstItem="b5N-6E-FCy" firstAttribute="top" secondItem="vET-JQ-Avr" secondAttribute="bottom" constant="6" id="5R8-Kq-3B2"/>
+                <constraint firstItem="ldm-D3-p86" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="5ya-nW-QPz"/>
+                <constraint firstItem="vET-JQ-Avr" firstAttribute="top" secondItem="iwS-mF-CNg" secondAttribute="bottom" constant="7" id="Bnl-iP-Q9R"/>
+                <constraint firstItem="ldm-D3-p86" firstAttribute="top" secondItem="2r3-9e-0zn" secondAttribute="bottom" constant="30" id="Elm-Qu-qz7"/>
+                <constraint firstItem="2r3-9e-0zn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Hbn-uk-1c9"/>
+                <constraint firstItem="8Kn-fF-NSA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="KBY-42-WiW"/>
+                <constraint firstAttribute="trailing" secondItem="iwS-mF-CNg" secondAttribute="trailing" id="OWH-RW-fZL"/>
+                <constraint firstItem="ldm-D3-p86" firstAttribute="top" secondItem="HZa-hx-Vnv" secondAttribute="bottom" id="Pv7-wp-nXf"/>
+                <constraint firstAttribute="bottom" secondItem="8Kn-fF-NSA" secondAttribute="bottom" constant="1" id="SyU-kR-qaT"/>
+                <constraint firstItem="8Kn-fF-NSA" firstAttribute="top" secondItem="ldm-D3-p86" secondAttribute="bottom" constant="8" id="WQL-sh-Ejm"/>
+                <constraint firstAttribute="trailing" secondItem="HZa-hx-Vnv" secondAttribute="trailing" constant="8" id="gOW-RV-Nsx"/>
+                <constraint firstItem="iwS-mF-CNg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mcQ-zq-1Zf"/>
+                <constraint firstItem="iwS-mF-CNg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pZX-TH-LZm"/>
+                <constraint firstItem="vET-JQ-Avr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="r5k-Kz-vBt"/>
+                <constraint firstAttribute="trailing" secondItem="b5N-6E-FCy" secondAttribute="trailing" constant="8" id="rcc-z3-7rA"/>
+                <constraint firstAttribute="trailing" secondItem="ldm-D3-p86" secondAttribute="trailing" constant="8" id="uQf-5n-MBT"/>
+                <constraint firstItem="b5N-6E-FCy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="x8n-cS-gfr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="compareLbl" destination="HZa-hx-Vnv" id="HtM-Ma-sKu"/>
+                <outlet property="introduceLbl" destination="b5N-6E-FCy" id="R4U-Qf-RKe"/>
+                <outlet property="niuniuHeader" destination="iwS-mF-CNg" id="Xk6-SL-fHD"/>
+            </connections>
+            <point key="canvasLocation" x="-793" y="4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image_bairennn.jpg" width="1080" height="1080"/>
+    </resources>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="40" id="KGk-i7-Jjw" customClass="AHRecordViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="252" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="252" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_zb_sffu" translatesAutoresizingMaskIntoConstraints="NO" id="Yhx-oB-uAC">
+                        <rect key="frame" x="28" y="8" width="25" height="25"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_zb_sffu" translatesAutoresizingMaskIntoConstraints="NO" id="UGt-r4-mSf">
+                        <rect key="frame" x="113.5" y="8" width="25" height="25"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_zb_sfsheng" translatesAutoresizingMaskIntoConstraints="NO" id="g0D-R8-rxF">
+                        <rect key="frame" x="199" y="8" width="25" height="25"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Yhx-oB-uAC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0Cc-gk-tLs"/>
+                    <constraint firstItem="UGt-r4-mSf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1LP-0k-vY6"/>
+                    <constraint firstItem="UGt-r4-mSf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="8bU-Ua-xKc"/>
+                    <constraint firstItem="Yhx-oB-uAC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="i0n-jh-5Sn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="g0D-R8-rxF" secondAttribute="trailing" constant="20" id="qkw-8L-dmI"/>
+                    <constraint firstItem="g0D-R8-rxF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ssB-d0-p5M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="earthImage" destination="UGt-r4-mSf" id="E1a-QD-UeN"/>
+                <outlet property="personImage" destination="g0D-R8-rxF" id="z1T-kS-qne"/>
+                <outlet property="skyImage" destination="Yhx-oB-uAC" id="mlC-fy-ads"/>
+            </connections>
+            <point key="canvasLocation" x="-423" y="-97"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_zb_sffu" width="25" height="25"/>
+        <image name="icon_zb_sfsheng" width="25" height="25"/>
+    </resources>
+</document>

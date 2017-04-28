@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AHLoginViewController">
+            <connections>
+                <outlet property="backGroudImageView" destination="u14-Gp-DJG" id="1JG-fK-Wlv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_login.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="u14-Gp-DJG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgS-jO-tMR">
+                    <rect key="frame" x="35" y="537" width="305" height="50"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                    <state key="normal" title="微信登录" backgroundImage="btn_login_weixin">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="weixinLogin:" destination="-1" eventType="touchUpInside" id="X6R-g5-eZo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DH-ne-WJ2">
+                    <rect key="frame" x="40" y="605" width="44" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="QQ登录"/>
+                    <connections>
+                        <action selector="tencentQQLogin:" destination="-1" eventType="touchUpInside" id="85o-lv-U8F"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3q-im-FLV">
+                    <rect key="frame" x="162" y="605" width="50" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="微博登录"/>
+                    <connections>
+                        <action selector="weiboLogin:" destination="-1" eventType="touchUpInside" id="upf-Zl-PZ4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Caj-jx-8Wo">
+                    <rect key="frame" x="285" y="605" width="50" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="手机登录"/>
+                    <connections>
+                        <action selector="phoneLogin:" destination="-1" eventType="touchUpInside" id="MDZ-2T-WtD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="u14-Gp-DJG" secondAttribute="bottom" id="1Gr-mJ-Rty"/>
+                <constraint firstItem="7DH-ne-WJ2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="87r-ZH-XqB"/>
+                <constraint firstAttribute="trailing" secondItem="u14-Gp-DJG" secondAttribute="trailing" id="HzS-Pt-fJL"/>
+                <constraint firstItem="k3q-im-FLV" firstAttribute="centerX" secondItem="u14-Gp-DJG" secondAttribute="centerX" id="I7j-Y4-C0i"/>
+                <constraint firstAttribute="bottom" secondItem="ZgS-jO-tMR" secondAttribute="bottom" constant="80" id="Ult-GM-SCe"/>
+                <constraint firstItem="Caj-jx-8Wo" firstAttribute="bottom" secondItem="k3q-im-FLV" secondAttribute="bottom" id="Z9u-fX-x3N"/>
+                <constraint firstAttribute="trailing" secondItem="Caj-jx-8Wo" secondAttribute="trailing" constant="40" id="bYq-tS-b3t"/>
+                <constraint firstItem="u14-Gp-DJG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cVN-Em-jpq"/>
+                <constraint firstItem="u14-Gp-DJG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gHS-XO-dHC"/>
+                <constraint firstItem="ZgS-jO-tMR" firstAttribute="centerX" secondItem="u14-Gp-DJG" secondAttribute="centerX" id="q4Y-X0-FSy"/>
+                <constraint firstAttribute="bottom" secondItem="7DH-ne-WJ2" secondAttribute="bottom" constant="35" id="r6q-bB-k8n"/>
+                <constraint firstItem="k3q-im-FLV" firstAttribute="bottom" secondItem="7DH-ne-WJ2" secondAttribute="bottom" id="xRP-Cw-720"/>
+            </constraints>
+            <point key="canvasLocation" x="21.5" y="68.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_login_weixin" width="305" height="50"/>
+        <image name="image_login.jpg" width="1080" height="1920"/>
+    </resources>
+</document>

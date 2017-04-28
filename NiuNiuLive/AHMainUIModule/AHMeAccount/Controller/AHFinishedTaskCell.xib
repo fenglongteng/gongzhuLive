@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AHFinishedTaskCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完成一次充值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wg-LI-gxw">
+                        <rect key="frame" x="28" y="16" width="74" height="14.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5000 经验值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdQ-4y-jk3">
+                        <rect key="frame" x="28" y="36.5" width="65" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_rw_ywc" translatesAutoresizingMaskIntoConstraints="NO" id="pJY-Ow-dPm">
+                        <rect key="frame" x="245" y="25.5" width="44" height="44"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zdQ-4y-jk3" firstAttribute="leading" secondItem="8Wg-LI-gxw" secondAttribute="leading" id="PEs-xd-bV8"/>
+                    <constraint firstItem="8Wg-LI-gxw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="VpZ-VQ-zXy"/>
+                    <constraint firstItem="8Wg-LI-gxw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="d3S-gw-P4z"/>
+                    <constraint firstAttribute="trailing" secondItem="pJY-Ow-dPm" secondAttribute="trailing" constant="31" id="g36-jr-3YV"/>
+                    <constraint firstItem="pJY-Ow-dPm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oBx-hF-Gv2"/>
+                    <constraint firstItem="zdQ-4y-jk3" firstAttribute="top" secondItem="8Wg-LI-gxw" secondAttribute="bottom" constant="6" id="sjb-6p-ndM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="experienceLabel" destination="zdQ-4y-jk3" id="BdV-9X-ljM"/>
+                <outlet property="taskTitleLabel" destination="8Wg-LI-gxw" id="ILc-Ro-jRq"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="54.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_rw_ywc" width="44" height="44"/>
+    </resources>
+</document>

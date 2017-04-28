@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="KGk-i7-Jjw" customClass="AHFriendPhoneCell">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dII-Rg-kSF">
+                        <rect key="frame" x="16" y="12" width="37.5" height="37.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dII-Rg-kSF" secondAttribute="height" id="7bd-3e-MLO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阿里郎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ck1-ta-A05">
+                        <rect key="frame" x="68.5" y="15" width="37" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXW-oy-XiQ">
+                        <rect key="frame" x="262" y="18.5" width="70" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="LDc-QV-Inp"/>
+                            <constraint firstAttribute="width" constant="70" id="v18-p0-XbA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <state key="normal" title="邀请">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="invitationClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dW2-sz-gBk"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1821827281" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sU-YB-Id7">
+                        <rect key="frame" x="68.5" y="35.5" width="58.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dII-Rg-kSF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="7BD-XK-I87"/>
+                    <constraint firstAttribute="top" secondItem="ck1-ta-A05" secondAttribute="top" constant="-15" id="B01-0u-qKe"/>
+                    <constraint firstItem="7sU-YB-Id7" firstAttribute="leading" secondItem="ck1-ta-A05" secondAttribute="leading" id="JSk-at-JMF"/>
+                    <constraint firstItem="ck1-ta-A05" firstAttribute="leading" secondItem="dII-Rg-kSF" secondAttribute="trailing" constant="15" id="OKH-ff-fTb"/>
+                    <constraint firstItem="jXW-oy-XiQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="TEz-r1-VoF"/>
+                    <constraint firstAttribute="trailing" secondItem="jXW-oy-XiQ" secondAttribute="trailing" constant="15" id="Y70-XJ-CuE"/>
+                    <constraint firstItem="7sU-YB-Id7" firstAttribute="top" secondItem="ck1-ta-A05" secondAttribute="bottom" constant="6" id="ZE7-YP-H0h"/>
+                    <constraint firstItem="dII-Rg-kSF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="mwj-ul-Z5X"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dII-Rg-kSF" secondAttribute="bottom" constant="4" id="sYL-Nh-uaV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="friendImageView" destination="dII-Rg-kSF" id="4ir-Gr-amM"/>
+                <outlet property="friendName" destination="ck1-ta-A05" id="OwN-gA-Ddd"/>
+                <outlet property="friendPhoneNum" destination="7sU-YB-Id7" id="ffh-Nl-7Fz"/>
+                <outlet property="invitationBtn" destination="jXW-oy-XiQ" id="bdW-SE-8P3"/>
+            </connections>
+            <point key="canvasLocation" x="-11.5" y="40"/>
+        </tableViewCell>
+    </objects>
+</document>

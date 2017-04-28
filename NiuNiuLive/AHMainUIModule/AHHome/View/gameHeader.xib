@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="gameHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_bairennn.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JRN-g1-4SN">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="258"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="所有直播插件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1S-xS-xOd">
+                    <rect key="frame" x="8" y="268" width="92" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="rfQ-pT-hgc"/>
+                        <constraint firstAttribute="width" constant="92" id="wI1-VA-ktW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCK-M6-6fB">
+                    <rect key="frame" x="200" y="266" width="112" height="25"/>
+                    <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="6L9-8t-S18"/>
+                        <constraint firstAttribute="width" constant="112" id="mCJ-z2-Kb5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="签到领取游戏币">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="qianDaoBtn_pressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="CnP-eH-WZM"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ry8-ce-6MB" userLabel="分割线">
+                    <rect key="frame" x="8" y="299" width="304" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Zc1-hI-V6d"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oCK-M6-6fB" firstAttribute="top" secondItem="JRN-g1-4SN" secondAttribute="bottom" constant="8" id="CLS-0g-kEu"/>
+                <constraint firstItem="ry8-ce-6MB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="CYM-ji-Tt1"/>
+                <constraint firstItem="JRN-g1-4SN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Dmz-b4-rjK"/>
+                <constraint firstAttribute="trailing" secondItem="JRN-g1-4SN" secondAttribute="trailing" id="F33-Vt-nls"/>
+                <constraint firstItem="ry8-ce-6MB" firstAttribute="top" secondItem="oCK-M6-6fB" secondAttribute="bottom" constant="8" id="NpN-eG-pL6"/>
+                <constraint firstAttribute="trailing" secondItem="oCK-M6-6fB" secondAttribute="trailing" constant="8" id="PyW-3h-VG2"/>
+                <constraint firstItem="ry8-ce-6MB" firstAttribute="top" secondItem="i1S-xS-xOd" secondAttribute="bottom" constant="10" id="Tww-6b-30R"/>
+                <constraint firstItem="i1S-xS-xOd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="UhS-8b-uA5"/>
+                <constraint firstItem="JRN-g1-4SN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fIy-gX-exd"/>
+                <constraint firstAttribute="trailing" secondItem="ry8-ce-6MB" secondAttribute="trailing" constant="8" id="fTE-H2-B92"/>
+                <constraint firstAttribute="bottom" secondItem="ry8-ce-6MB" secondAttribute="bottom" id="wZg-f9-Wox"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="qianDaoBtn" destination="oCK-M6-6fB" id="u3q-88-dCZ"/>
+                <outlet property="topImage" destination="JRN-g1-4SN" id="W3y-xv-ffx"/>
+            </connections>
+            <point key="canvasLocation" x="-365" y="-114"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image_bairennn.jpg" width="1080" height="1080"/>
+    </resources>
+</document>

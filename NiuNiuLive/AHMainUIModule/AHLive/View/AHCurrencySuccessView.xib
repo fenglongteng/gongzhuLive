@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AHCurrencySuccessView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_live_bjjsds" translatesAutoresizingMaskIntoConstraints="NO" id="XyF-cX-Uym">
+                    <rect key="frame" x="61" y="196" width="252" height="275"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8a-KN-ZFR">
+                    <rect key="frame" x="61" y="196" width="252" height="275"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="庄家 -291800" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjd-Au-SNC">
+                            <rect key="frame" x="84.5" y="90.5" width="83" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本家 +2300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cew-Ee-UhN">
+                            <rect key="frame" x="83" y="57" width="86" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.7803921568627451" green="0.6588235294117647" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="打赏主播手气会更好哦！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiV-gO-4fq">
+                            <rect key="frame" x="64" y="127" width="124" height="13.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sw9-sE-pTT" customClass="AHFinalGiftButton">
+                            <rect key="frame" x="97" y="150.5" width="58" height="68"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" backgroundImage="bg_live_bk"/>
+                            <state key="selected" backgroundImage="bg_live_bk0"/>
+                            <connections>
+                                <action selector="giftSelectClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Wfn-0R-5CM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S50-zE-Dam">
+                            <rect key="frame" x="220" y="12" width="32" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <state key="normal" image="btn_live_close"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8E7-Xb-z54">
+                            <rect key="frame" x="86" y="228" width="80" height="27"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="打赏TA" backgroundImage="btn_live_ds">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sendGiftClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="tQ8-xe-elo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsW-6Z-LQ5" customClass="AHFinalGiftButton">
+                            <rect key="frame" x="174" y="150" width="58" height="68"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" backgroundImage="bg_live_bk"/>
+                            <state key="selected" backgroundImage="bg_live_bk0"/>
+                            <connections>
+                                <action selector="giftSelectClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="fCr-Lt-phv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0S-Cj-fQD" customClass="AHFinalGiftButton">
+                            <rect key="frame" x="21" y="150.5" width="58" height="68"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="58" id="LRj-0A-wE8"/>
+                                <constraint firstAttribute="height" constant="68" id="eIw-2h-1S6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                            <state key="normal" backgroundImage="bg_live_bk"/>
+                            <state key="selected" backgroundImage="bg_live_bk0"/>
+                            <connections>
+                                <action selector="giftSelectClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="KRG-WS-gzS"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="FsW-6Z-LQ5" firstAttribute="top" secondItem="Sw9-sE-pTT" secondAttribute="top" id="75A-UB-25N"/>
+                        <constraint firstItem="Sjd-Au-SNC" firstAttribute="centerX" secondItem="Cew-Ee-UhN" secondAttribute="centerX" id="8Ig-6B-WzB"/>
+                        <constraint firstItem="SiV-gO-4fq" firstAttribute="centerX" secondItem="Sjd-Au-SNC" secondAttribute="centerX" id="AdD-Pa-YIc"/>
+                        <constraint firstAttribute="bottom" secondItem="8E7-Xb-z54" secondAttribute="bottom" constant="20" id="Fxw-UB-uP0"/>
+                        <constraint firstItem="Sw9-sE-pTT" firstAttribute="top" secondItem="SiV-gO-4fq" secondAttribute="bottom" constant="10" id="G5O-7i-8Eu"/>
+                        <constraint firstItem="Sw9-sE-pTT" firstAttribute="centerX" secondItem="D8a-KN-ZFR" secondAttribute="centerX" id="KgE-eg-dtM"/>
+                        <constraint firstItem="Sw9-sE-pTT" firstAttribute="leading" secondItem="R0S-Cj-fQD" secondAttribute="trailing" constant="18" id="cu0-XC-EwD"/>
+                        <constraint firstAttribute="trailing" secondItem="S50-zE-Dam" secondAttribute="trailing" id="fgw-9q-yoX"/>
+                        <constraint firstItem="R0S-Cj-fQD" firstAttribute="top" secondItem="Sw9-sE-pTT" secondAttribute="top" id="k3u-Kl-5s9"/>
+                        <constraint firstItem="Cew-Ee-UhN" firstAttribute="top" secondItem="D8a-KN-ZFR" secondAttribute="top" constant="57" id="mdB-ql-heL"/>
+                        <constraint firstItem="Sjd-Au-SNC" firstAttribute="top" secondItem="Cew-Ee-UhN" secondAttribute="bottom" constant="14" id="pDb-VH-K3T"/>
+                        <constraint firstItem="8E7-Xb-z54" firstAttribute="centerX" secondItem="D8a-KN-ZFR" secondAttribute="centerX" id="qFu-IN-yhq"/>
+                        <constraint firstItem="SiV-gO-4fq" firstAttribute="top" secondItem="Sjd-Au-SNC" secondAttribute="bottom" constant="20" id="v8p-hN-eSB"/>
+                        <constraint firstItem="S50-zE-Dam" firstAttribute="top" secondItem="D8a-KN-ZFR" secondAttribute="top" constant="12" id="vFY-VE-Rz4"/>
+                        <constraint firstItem="Cew-Ee-UhN" firstAttribute="centerX" secondItem="D8a-KN-ZFR" secondAttribute="centerX" id="xze-QS-mpj"/>
+                        <constraint firstItem="FsW-6Z-LQ5" firstAttribute="leading" secondItem="Sw9-sE-pTT" secondAttribute="trailing" constant="19" id="yC6-NI-9jg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="D8a-KN-ZFR" firstAttribute="leading" secondItem="XyF-cX-Uym" secondAttribute="leading" id="EsY-bj-Tzl"/>
+                <constraint firstItem="D8a-KN-ZFR" firstAttribute="top" secondItem="XyF-cX-Uym" secondAttribute="top" id="F2N-6B-EXg"/>
+                <constraint firstItem="XyF-cX-Uym" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="V9Q-ok-bYm"/>
+                <constraint firstItem="XyF-cX-Uym" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fTh-FA-PXI"/>
+                <constraint firstItem="D8a-KN-ZFR" firstAttribute="centerX" secondItem="XyF-cX-Uym" secondAttribute="centerX" id="j58-0D-o78"/>
+                <constraint firstItem="D8a-KN-ZFR" firstAttribute="bottom" secondItem="XyF-cX-Uym" secondAttribute="bottom" id="oGl-Td-MVU"/>
+            </constraints>
+            <connections>
+                <outlet property="bankerFinalGoldLb" destination="Sjd-Au-SNC" id="WNX-Yg-SJ6"/>
+                <outlet property="firstGiftBt" destination="R0S-Cj-fQD" id="5TH-cu-Qkt"/>
+                <outlet property="ownFinalGoldLb" destination="Cew-Ee-UhN" id="PMN-De-fp9"/>
+                <outlet property="sencondgiftBtn" destination="Sw9-sE-pTT" id="5y8-aG-IyL"/>
+                <outlet property="treeGiftBtn" destination="FsW-6Z-LQ5" id="WvZ-ac-GHS"/>
+            </connections>
+            <point key="canvasLocation" x="-5" y="49"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_live_bjjsds" width="252" height="275"/>
+        <image name="bg_live_bk" width="58" height="68"/>
+        <image name="bg_live_bk0" width="58" height="68"/>
+        <image name="btn_live_close" width="32" height="32"/>
+        <image name="btn_live_ds" width="80" height="27"/>
+    </resources>
+</document>

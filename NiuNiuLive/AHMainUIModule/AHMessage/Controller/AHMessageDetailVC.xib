@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AHMessageDetailVC">
+            <connections>
+                <outlet property="messageDetailTextView" destination="YBs-5l-OIh" id="rhY-8B-bRk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOJ-vP-UM5">
+                    <rect key="frame" x="0.0" y="10" width="375" height="657"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="YBs-5l-OIh">
+                    <rect key="frame" x="0.0" y="22" width="375" height="645"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <mutableString key="text">虽然调试器也有一定的代码补全功能，但是毕竟程序员的时间是宝贵的， Xcode 的调试器毕竟还没做到 zsh 那样屌炸天，我们需要更多的“缩写”命令。Facebook 的程序员们最先按捺不住（毕竟人家做个客户端就要动辄几百号人），开发了一个基于 lldb 的工具：chisel。从此，输出视图层级只需要一条命令：pviews，输出视图控制器层级也是一条命令：pvc，刷新渲染服务更是一条命令：caflush。安装 chisel 更是简单，直接用 Homebrew 分分钟搞定，因为 Homebrew 在 OSX 上太火，有人还专门做了个带图形界面的客户端 Cakebrew，简直骚得不得了。
+
+当然我们无需查看完整的视图层级树，pviews 后面可以附带参数，查看当前 view 为根节点下的层级树。默认不带参数就是完整打印。虽然调试器也有一定的代码补全功能，但是毕竟程序员的时间是宝贵的， Xcode 的调试器毕竟还没做到 zsh 那样屌炸天，我们需要更多的“缩写”命令。Facebook 的程序员们最先按捺不住（毕竟人家做个客户端就要动辄几百号人），开发了一个基于 lldb 的工具：chisel。从此，输出视图层级只需要一条命令：pviews，输出视图控制器层级也是一条命令：pvc，刷新渲染服务更是一条命令：caflush。安装 chisel 更是简单，直接用 Homebrew 分分钟搞定，因为 Homebrew 在 OSX 上太火，有人还专门做了个带图形界面的客户端 Cakebrew，简直骚得不得了。
+
+当然我们无需查看完整的视图层级树，pviews 后面可以附带参数，查看当前 view 为根节点下的层级树。默认不带参数就是完整打印。</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YOJ-vP-UM5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0xP-wX-Jbq"/>
+                <constraint firstItem="YOJ-vP-UM5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="7Hq-Dm-u7T"/>
+                <constraint firstAttribute="bottom" secondItem="YBs-5l-OIh" secondAttribute="bottom" id="8Xx-ng-HAS"/>
+                <constraint firstAttribute="trailing" secondItem="YBs-5l-OIh" secondAttribute="trailing" id="AAt-B9-Xaj"/>
+                <constraint firstItem="YBs-5l-OIh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Y4M-hE-khM"/>
+                <constraint firstAttribute="trailing" secondItem="YOJ-vP-UM5" secondAttribute="trailing" id="jnd-Hb-Goe"/>
+                <constraint firstItem="YBs-5l-OIh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="rjP-54-rkp"/>
+                <constraint firstAttribute="bottom" secondItem="YOJ-vP-UM5" secondAttribute="bottom" id="udG-Se-ReQ"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="95.5"/>
+        </view>
+    </objects>
+</document>

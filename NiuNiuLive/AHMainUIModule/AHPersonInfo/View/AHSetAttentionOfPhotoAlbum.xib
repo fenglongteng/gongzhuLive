@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AHSetAttentionOfPhotoAlbum">
+            <connections>
+                <outlet property="attentionBt" destination="zFb-mq-V5g" id="Fpg-DY-g6b"/>
+                <outlet property="headImageView" destination="CLX-2q-lTb" id="sGG-bA-k2h"/>
+                <outlet property="nickNameLabel" destination="6fg-yT-oSn" id="cSz-hU-4cy"/>
+                <outlet property="profileLabel" destination="wKm-W8-Ggb" id="0cJ-sm-FK3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CLX-2q-lTb">
+                    <rect key="frame" x="15" y="10" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="7iN-fN-YEk"/>
+                        <constraint firstAttribute="height" constant="45" id="QqE-nb-G7a"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="香叶子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fg-yT-oSn">
+                    <rect key="frame" x="75" y="15" width="37" height="14.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="一起聊天吧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKm-W8-Ggb">
+                    <rect key="frame" x="75" y="37" width="56.5" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFb-mq-V5g">
+                    <rect key="frame" x="264" y="18.5" width="50" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="S4W-H6-FaV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="已关注"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6fg-yT-oSn" firstAttribute="leading" secondItem="CLX-2q-lTb" secondAttribute="trailing" constant="15" id="1B5-fA-5ah"/>
+                <constraint firstItem="CLX-2q-lTb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4u6-ey-dW1"/>
+                <constraint firstAttribute="trailing" secondItem="zFb-mq-V5g" secondAttribute="trailing" constant="16" id="Lge-jF-cv9"/>
+                <constraint firstItem="CLX-2q-lTb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="N6C-bQ-iPa"/>
+                <constraint firstItem="wKm-W8-Ggb" firstAttribute="leading" secondItem="6fg-yT-oSn" secondAttribute="leading" id="Zvq-s6-Jn9"/>
+                <constraint firstItem="6fg-yT-oSn" firstAttribute="top" secondItem="CLX-2q-lTb" secondAttribute="top" constant="5" id="pLO-zk-3Bo"/>
+                <constraint firstItem="zFb-mq-V5g" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wmg-D7-9Tl"/>
+                <constraint firstItem="wKm-W8-Ggb" firstAttribute="bottom" secondItem="CLX-2q-lTb" secondAttribute="bottom" constant="-5" id="yeI-RR-yIi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="92" y="349.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="head.jpg" width="690" height="920"/>
+    </resources>
+</document>
